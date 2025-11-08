@@ -1,0 +1,622 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+}
+
+.wrapper {
+    width: auto;
+    margin: auto;
+    padding: 20px 0px 20px 0px;
+    color: #FFF
+}
+
+/* Menu */
+nav {
+    background-color: #222831;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 10px 0;
+}
+
+nav>.wrapper {
+    display: flex;
+    justify-content: space-between;
+    /* pisahkan logo dan menu */
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+/* Logo */
+.logo img {
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Menu list */
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    /* jarak antar menu */
+    margin: 0;
+    padding: 0;
+}
+
+/* Link */
+.menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #00adb5;
+}
+
+.menu {
+    width: 50%;
+
+}
+
+.menu>ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    justify-content: space-between
+}
+
+.menu>ul>li>a {
+    text-decoration: none;
+    color: #FFF
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo>img {
+    height: 45px;
+}
+
+/* hero / jumbotron
+ */
+header {
+    background: url("../image/begrown.jpg");
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    font: optional;
+    letter-spacing: 5px;
+    text-shadow: 0 0 4px #000;
+}
+
+.header-opacity {
+    background-color: #222831;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.header-jumbotron {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header-jumbotron>h4 {
+    color: #FFF;
+    size: 16rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header-jumbotron>h5 {
+    color: #fff;
+    margin: 0px;
+    padding: 5px;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+.header-jumbotron>p {
+    padding: 5px;
+    margin: 0px 5px 0px 5px;
+    color: #fff
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    text-shadow: none;
+
+
+}
+
+.button {
+    background-color: #b9719a;
+    border-radius: 5px;
+    opacity: 0.7;
+}
+
+.button-xl {
+    font-size: 1.4rem;
+    padding: 20px;
+}
+
+/*
+    * statistic
+    */
+#statistic {
+    background-color: #313941;
+}
+
+#statistic>.wrapper {
+    padding: 50px;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+#statistic>.wrapper>div {
+
+    width: 100px;
+}
+
+
+#statistic>.wrapper>div>p {
+    font-size: 3.5rem;
+}
+
+/*
+* premium course
+*/
+#premium-course {
+    background-color: #222831;
+}
+
+#premium-course>.wrapper>h4 {
+    text-align: center;
+    font-size: 2, 8rem;
+    margin: 0px;
+    padding: 0px;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+#premium-course>.wrapper>h4>span {
+    color: #b9719a;
+    border-radius: 5px;
+    font-size: x-large;
+}
+
+#premium-course>.wrapper>p {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 50px;
+}
+
+.grid>.item {
+    border: 1px solid #666;
+    background-color: #ffffff;
+    border-radius: 5px;
+    position: relative;
+}
+
+.grid>.item>img {
+    width: 15%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.grid>.item>.item-detail {
+    padding: 30px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    width: 70%;
+    color: #ada639;
+}
+
+.grid>.item>.item-detail>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.grid>.item>.item-detail>div>small {
+    color: #020305;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.grid>.item>.item-detail>div>a {
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+/* 
+* tentang saya
+*/
+#tentang-saya {
+    background-color: #F0F5F9;
+    color: #000;
+}
+
+#tentang-saya>.wrapper {
+    padding: 50px 0px 50px 0px;
+}
+
+#tentang-saya>.wrapper>h4 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Kanit", sans-serif;
+    color: #000;
+}
+
+#tentang-saya>.wrapper>p {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0px;
+    padding: 0px;
+    color: #000;
+    margin-bottom: 50px;
+}
+
+#tentang-saya>.wrapper>div {
+    display: flex;
+    width: 70% margin auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#tentang-saya>.wrapper>div>.foto {
+    width: 30%;
+}
+
+#tentang-saya>.wrapper>div>.foto>img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+#tentang-saya>.wrapper>div>.desc {
+    width: 70%;
+    padding: 20px;
+    margin: 10px;
+    background-color: #b9719a;
+    border-radius: 10px;
+}
+
+#tentang-saya>.wrapper>div>.desc>p {
+    margin: 0px 0px 10px 0px;
+    font-size: 1.3rem;
+    line-height: 1.9rem;
+}
+
+/* Sosial Media */
+.sosial {
+    margin-top: 20px;
+}
+
+.sosial a {
+    color: #27374D;
+    font-size: 2rem;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.sosial a:hover {
+    color: #526D82;
+}
+
+/*
+* Social Media 
+*/
+
+#Private-course {
+    background-color: #ee487f;
+    color: #fff;
+}
+
+#Private-course>.wrapper {
+    padding: 50px 0px 50px 0px;
+}
+
+#Private-course>.wrapper>h4 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Kanit", sans-serif;
+}
+
+#Private-course>.wrapper>h4>span {
+    color: #9DB2BF;
+}
+
+#Private-course>.wrapper>p {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0px;
+    padding: 0px;
+    color: #DDE6ED;
+    margin-bottom: 50px;
+}
+
+#private-course>.wrapper>.grid>.item {
+    margin: 0px;
+    padding: 0px;
+}
+
+#private-course>.wrapper>.grid>.item>.item-detail {
+    padding: 0px;
+    margin: 0px;
+    font-size: 1.4rem;
+    width: 100%;
+}
+
+#private-course>.wrapper>.grid>.item>.item-detail>img {
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#Private-course .grid {
+    display: grid;
+    gap: 30px;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+#Private-course .item {
+    background: #ffffff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#Private-course .item-detail {
+    padding: 15px;
+}
+
+#Private-course .item-detail img {
+    width: 100%;
+    height: 200px;
+    /* tetapkan tinggi yang konsisten */
+    object-fit: cover;
+    /* pastikan gambar menutupi area dengan baik */
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+#Private-course .item-detail img:hover {
+    transform: scale(1.03);
+}
+
+#Private-course .item-detail div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+#Private-course .item-detail small {
+    color: #13270645;
+    font-size: 0.9rem;
+}
+
+#Private-course .item-detail .button {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+}
+
+#private-course>.wrapper>.grid>.item>.item-detail>div {
+    padding: 10px 20px 10px 20px;
+}
+
+/* 
+* copyright 
+*/
+footer {
+    background-color: #ffffff;
+    color: #DDE6ED;
+    text-align: center;
+}
+
+footer>.wrapper {
+    padding: 30px 0px 30px 0px;
+    color: #000000;
+}
+
+/*
+* hamburger menu
+*/
+.hamburger-menu {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.hamburger-menu .icon-close {
+    display: none;
+}
+
+.hamburger-menu.active .icon-bars {
+    display: none;
+}
+
+.hamburger-menu.active .icon-close {
+    display: inline-block;
+}
+
+
+/*
+* 1024, 900, 768, 600, 480
+*/
+
+@media only screen and (max-width: 1024px) {
+    .wrapper {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    #statistik>.wrapper>div>p {
+        font-size: 2.5rem;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    #statistik>.wrapper>div>p>i {
+        font-size: 2.5rem;
+    }
+
+    #statistik>.wrapper>div>small {
+        font-size: 1rem;
+    }
+
+    .grid {
+        grid-template-columns: 45% 45%;
+    }
+
+    .item>img {
+        width: 8%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .menu {
+        width: 60%;
+    }
+
+    .header-jumbotron>h4 {
+        font-size: 1.5rem;
+    }
+
+    .header-jumbotron>h5 {
+        font-size: 2rem;
+        line-height: 2.2rem;
+    }
+
+    .header-jumbotron>p {
+        font-size: 0.8rem;
+    }
+
+    .button {
+        padding: 5px;
+    }
+
+    .button-xl {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    #statistik>.wrapper>div>p {
+        font-size: 1.5rem;
+        margin: 0px;
+    }
+
+    #statistik>.wrapper>div>p>i {
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .grid {
+        grid-template-columns: 100%;
+    }
+
+    #statistik>.wrapper {
+        padding: 10px;
+        flex-direction: column;
+    }
+
+    #statistik>.wrapper>div {
+        display: flex;
+    }
+
+    #statistik>.wrapper>div>small {
+        font-size: 1.5rem;
+        padding-left: 10px;
+    }
+
+    #tentang-saya>.wrapper>div {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #tentang-saya>.wrapper>div>.foto {
+        width: 50%;
+    }
+
+    #tentang-saya>.wrapper>div>.foto>img {
+        width: 100%;
+    }
+
+    #tentang-saya>.wrapper>div>.foto>.desc {
+        width: 70%;
+        padding: 20px;
+        margin: 10px;
+    }
+
+    #tentang-saya>.wrapper>div>.desc>.sosial {
+        margin: auto;
+    }
+
+    button.hamburger-menu {
+        display: inline;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .tampil {
+        display: inline;
+    }
+
+    .tampil>ul {
+        flex-direction: column;
+        background-color: #000000;
+        width: 100%;
+        position: fixed;
+        top: 85px;
+        left: 0;
+    }
+
+    .tampil>ul>li {
+        padding: 10px 20px 10px 20px;
+    }
+}
